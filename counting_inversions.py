@@ -1,3 +1,10 @@
+"""
+Algorithms, Design and Analysis, Part I.
+Programming Assignment 2:
+
+Count inversions using Merge Sort.
+"""
+
 # Running time: T(n) = O(n log n)
 import math
 
