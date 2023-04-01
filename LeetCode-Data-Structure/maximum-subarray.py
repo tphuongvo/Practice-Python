@@ -1,5 +1,27 @@
 # Given an integer array nums, find the subarray with the largest sum, and return its sum.
 
+# Time Limit Exceeded for Brute Force Approach
+
+# class Solution:
+#     def maxSubArray(self, nums: List[int]) -> int:
+#         sum_ = -np.inf
+#         front,end = 0,0
+#         if len(nums) == 1:
+#             sum_ = nums[0]
+#         else:
+#             for j in range(0, len(nums)+1):
+#                 for i in range(j, len(nums)):
+#                     sum_lst = np.sum(nums[j:i+1])
+#                     if round(sum_,1) < sum_lst:
+#                         sum_ = sum_lst
+#                         front = j
+#                         end = i
+#         return sum_
+
+# Kadane's Algo
+# Time Complexity: O(n)
+# Runtime 718 ms
+
 from typing import List
 
 def maxSubArray(nums: List[int]) -> int:
