@@ -1,3 +1,5 @@
+# Given an integer array nums, find the subarray with the largest sum, and return its sum.
+
 from typing import List
 
 def maxSubArray(nums: List[int]) -> int:
